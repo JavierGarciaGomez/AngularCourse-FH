@@ -1,0 +1,28 @@
+<h2>HEROS</h2>
+
+<h3>Lesson 43. Changing template</h3>
+
+
+<h1>{{ name }}</h1>
+
+<dl>
+    <td> Nombre: </td>
+    <dd> {{ name }} </dd>
+
+    <td> Edad: </td>
+    <dd> {{ age }} </dd>
+
+ <td> Función: </td>
+    <dd> {{ getName() }} </dd>
+    
+    <td> Capitalized: </td>
+    <dd> {{ capitalizedName }} </dd>
+</dl>
+
+<button (click)="changeName()">
+    Cambiar Héroe
+</button>
+
+<button (click)="changeAge()">
+    Cambiar edad
+</button>
