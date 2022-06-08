@@ -1,0 +1,19 @@
+<h3>Lesson 46. Directiva *ngFor</h3>
+<h3>Lesson 47. Directiva *ngIf</h3>
+
+<ul>
+    <li *ngFor="let hero of heros; let i = index"> 
+        {{ i + 1 }} - {{ hero }}
+    </li>
+</ul>
+
+<button (click)="deleteHero()">
+    Delete hero
+</button>
+
+<div *ngIf="deletedHero.length>0; else noDeletedHero"><p>Se ha borrado este héroe: {{deletedHero}}</p></div>
+
+
+<ng-template #noDeletedHero>
+    <h3>No ha borrado nada.</h3>
+</ng-template>
