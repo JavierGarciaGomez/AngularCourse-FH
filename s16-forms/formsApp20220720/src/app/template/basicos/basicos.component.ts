@@ -22,6 +22,7 @@ export class BasicosComponent implements OnInit {
   guardar() {
     console.log('GUARDADO', this.miFormulario.value);
     console.log(this.miFormulario);
+    this.miFormulario.resetForm(this.initForm);
   }
 
   nombreValido(): boolean {
